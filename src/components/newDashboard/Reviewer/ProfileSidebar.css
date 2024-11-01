@@ -1,0 +1,91 @@
+.sidebar {
+  width: max-content;
+  left: 0;
+  position: relative;
+  background: #fff;
+  -webkit-backdrop-filter: blur(5px); /* For Safari and older versions of Chrome and Edge */
+  backdrop-filter: blur(5px);
+  bottom: 0;
+  user-select: none;
+  -webkit-user-select: 'none';
+  z-index: 99;
+  transition: width 0.3s ease;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);  
+  
+}
+
+.content {
+  height: 100%;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-right: 5px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+/* Style the scrollbar inside the .sidebar */
+.content::-webkit-scrollbar {
+  width: 0px;
+  display: none;
+}
+
+.content::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+}
+
+.content::-webkit-scrollbar-track {
+  background-color: #fff;
+  border-top-right-radius: 1rem;
+}
+
+.content ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.content ul li {
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  flex: 1
+}
+
+.content ul li a {
+  display: block;
+  padding: 5px 10px;
+  margin: 5px;
+  color: #5e5e5e;
+  text-decoration: none;
+  transition: 0.3s;
+  border-radius: 0.5rem;
+}
+
+
+.content ul li a:hover {
+  /* background: #ccc; */
+  color: #44a33b;
+}
+
+/* New class for selected state */
+.content ul li a.selected {
+  /* background: #ccc; */
+  color: #1e1e1e;
+}
+
+.content ul li a:hover,
+.content ul li a.active {
+  /* background: #ccc; */
+  color: #1e1e1e;
+}
+
+.content ul li a i {
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: max-content;
+  }
+}

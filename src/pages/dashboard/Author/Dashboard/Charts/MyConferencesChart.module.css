@@ -1,0 +1,16 @@
+.actionContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    color: blue; /* Change color as desired */
+    text-decoration: underline;
+}
+
+.actionContainer:hover {
+    color: purple; /* Change color on hover as desired */
+}

@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  /* font-family: 'Inter', sans-serif; */
+  font-family: 'Helvetica';
+}
+
+
+
+/* ____White LOADER___________________________________________________ */
+
+.whiteloader {
+  width: 65px;
+  aspect-ratio: 1;
+  position: relative;
+}
+.whiteloader:before,
+.whiteloader:after {
+  content: "";
+  position: absolute;
+  border-radius: 50px;
+  box-shadow: 0 0 0 3px inset #fff;
+  animation: l4 2.5s infinite;
+}
+.whiteloader:after {
+  animation-delay: -1.25s;
+}
+@keyframes l4 {
+  0% {
+    inset: 0 35px 35px 0;
+  }
+  12.5% {
+    inset: 0 35px 0 0;
+  }
+  25% {
+    inset: 35px 35px 0 0;
+  }
+  37.5% {
+    inset: 35px 0 0 0;
+  }
+  50% {
+    inset: 35px 0 0 35px;
+  }
+  62.5% {
+    inset: 0 0 0 35px;
+  }
+  75% {
+    inset: 0 0 35px 35px;
+  }
+  87.5% {
+    inset: 0 0 35px 0;
+  }
+  100% {
+    inset: 0 35px 35px 0;
+  }
+}
+
+/* BLUE LOADER___________________________________________________ */
+
+.blueloader {
+  width: 65px;
+  aspect-ratio: 1;
+  position: relative;
+  transform: scale(0.7);
+}
+.blueloader:before,
+.blueloader:after {
+  content: "";
+  position: absolute;
+  border-radius: 10px;
+  box-shadow: 0 0 0 3px inset #0f67fd;
+  animation: l4 2.5s infinite;
+}
+.blueloader:after {
+  animation-delay: -1.25s;
+}
+@keyframes l4 {
+  0% {
+    inset: 0 35px 35px 0;
+  }
+  12.5% {
+    inset: 0 35px 0 0;
+  }
+  25% {
+    inset: 35px 35px 0 0;
+  }
+  37.5% {
+    inset: 35px 0 0 0;
+  }
+  50% {
+    inset: 35px 0 0 35px;
+  }
+  62.5% {
+    inset: 0 0 0 35px;
+  }
+  75% {
+    inset: 0 0 35px 35px;
+  }
+  87.5% {
+    inset: 0 0 35px 0;
+  }
+  100% {
+    inset: 0 35px 35px 0;
+  }
+}
+
+/* ___________DOWNLOAD BUTTON__________ */
+
+.loadingAnimator {
+  animation: zoomInOut 0.5s linear infinite alternate;
+  transform-origin: center;
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}

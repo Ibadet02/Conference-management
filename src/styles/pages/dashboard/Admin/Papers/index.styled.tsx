@@ -1,0 +1,21 @@
+import styled from "styled-components";
+import { Theme } from "../../../../../types/default/types";
+
+export const StyledPapers = styled.article<{ theme: Theme }>`
+  flex: 1;
+  overflow: hidden;
+  table {
+    width: 100%;
+  }
+  table,
+  th,
+  td {
+    border: 0.1rem solid black;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  th,
+  td {
+    padding: 0.4rem;
+  }
+`;

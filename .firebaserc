@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "bme-conference-management",
+    "hosting": "bme-conference-management-2"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}

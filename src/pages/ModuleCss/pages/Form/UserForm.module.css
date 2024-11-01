@@ -1,0 +1,11 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: rgb(76,175,79);
+    background: linear-gradient(90deg, rgba(76,175,79,1) 0%, rgba(76,175,79,1) 35%, rgba(128,207,130,1) 100%);
+  background-image: url("../../../../assets/images/register-screen.png");
+}
